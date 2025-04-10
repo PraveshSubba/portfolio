@@ -16,6 +16,7 @@ export const About = () => {
 
   return (
     <section className="c-space my-20" id="about">
+      <h1 className="head-text">About Me</h1>
       <div className="grid xl:grid-cols-3 xl:grid-rows-4 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
@@ -69,7 +70,7 @@ export const About = () => {
               </p>
               <p className="grid-subtext">
                 {" "}
-                I m based at India, with remote work availabel.
+                I m based at India, with remote work availabe.
               </p>
               <a href="#contact">
                 <Button

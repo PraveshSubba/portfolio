@@ -4,7 +4,7 @@
 :root {
   --font-family-sans: "General Sans", sans-serif;
   --color-black-100: #010103;
-  --color-black-200: #0c0a0a; /* Adjust as needed */
+  --color-black-200: #0c0a0a;
   --color-black-300: #333333;
   --color-black-500: #4d4d4d;
   --color-black-600: #666666;
@@ -52,14 +52,15 @@
   }
 
   .head-text {
-    font-size: 1.875rem; /* text-3xl */
-    font-weight: 600; /* font-semibold */
+    font-size: 1.875rem;
+    font-weight: 600;
     background-image: var(--gradient-gray);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    margin-bottom: 1.8%;
     @media (min-width: 640px) {
-      font-size: 2.25rem; /* sm:text-4xl */
+      font-size: 2.25rem;
     }
   }
 

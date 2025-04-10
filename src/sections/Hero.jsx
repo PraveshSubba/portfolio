@@ -3,10 +3,10 @@ import { PerspectiveCamera } from "@react-three/drei";
 import { Suspense } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import BumbleBee from "../components/BumbleBee";
-
 import { useMediaQuery } from "react-responsive";
 import { HeroCamera } from "../components/HeroCamera";
 import Button from "../components/Button";
+import Dog from "../components/dog";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -21,7 +21,7 @@ const Hero = () => {
           Learning. Growing. Creating
         </p>
         <div className="w-full h-full absolute inset-0">
-          <Canvas className="w-full h-full "> 
+          <Canvas className="w-full h-full ">
             <Suspense fallback={<CanvasLoader />}>
               <PerspectiveCamera
                 makeDefault
@@ -29,11 +29,19 @@ const Hero = () => {
               ></PerspectiveCamera>
 
               <HeroCamera isMobile={isMobile}>
-                <BumbleBee
-                  position={isMobile?[0.5, -10.5, -12]:[0.5, -11.8, -12]}
-                  rotation={[0.2, -0.1, 0]}
+                <group>
+                  <BumbleBee
+                  position={isMobile ? [-2, -10.6, -12] : [-3, -11.9, -12]}
+                  rotation={[0.2, 0.1, 0]}
                   scale={isMobile ? 0.09 : 0.094}
                 />
+                <Dog
+                  scale={5}
+                  position={[5, -10.8, -2]}
+                  rotation={[-0.2, -0.6, 0]}
+                />
+                </group>
+                
               </HeroCamera>
 
               <ambientLight intensity={1} />
@@ -52,7 +60,6 @@ const Hero = () => {
           />
         </a>
       </div>
-
     </section>
   );
 };
