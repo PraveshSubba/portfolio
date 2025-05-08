@@ -6,7 +6,7 @@ import BumbleBee from "../components/BumbleBee";
 import { useMediaQuery } from "react-responsive";
 import { HeroCamera } from "../components/HeroCamera";
 import Button from "../components/Button";
-import Dog from "../components/dog";
+import Dog from "../components/Dog";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -31,17 +31,16 @@ const Hero = () => {
               <HeroCamera isMobile={isMobile}>
                 <group>
                   <BumbleBee
-                  position={isMobile ? [-4, -11.6, -12] : [-3, -11.9, -12]}
-                  rotation={[0.2, 0.1, 0]}
-                  scale={isMobile ? 0.09 : 0.094}
-                />
-                <Dog
-                  scale={5}
-                  position={isMobile ? [4, -10.6, -2] : [5, -10.8, -2]}
-                  rotation={[-0.2, -0.5, 0]}
-                />
+                    position={isMobile ? [-4, -11.6, -12] : [-3, -11.9, -12]}
+                    rotation={[0.2, 0.1, 0]}
+                    scale={isMobile ? 0.09 : 0.094}
+                  />
+                  <Dog
+                    scale={5}
+                    position={isMobile ? [4, -10.6, -2] : [5, -10.8, -2]}
+                    rotation={[-0.2, -0.5, 0]}
+                  />
                 </group>
-                
               </HeroCamera>
               <ambientLight intensity={1.1} />
               <directionalLight position={[25, 10, 10]} intensity={1} />
