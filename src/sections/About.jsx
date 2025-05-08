@@ -27,7 +27,10 @@ export const About = () => {
             />
             <div>
               <p className="grid-headtext">Hi, I'm Pravesh </p>
-              <p className="grid-subtext">with experience of 12yrs</p>
+              <p className="grid-subtext">
+                Recent B.Sc. Computer Science graduate skilled in programming,
+                web development, and databases.
+              </p>
             </div>
           </div>
         </div>
@@ -35,15 +38,16 @@ export const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid2.png"
+              src="/assets/grid-2.png"
               alt="grid2"
               className="w-full sm:h-[276px] h-fit object-contain "
             />
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in javascript with a focus on React Spring Boot
-                ecosystem
+                I specialize in JavaScript, focusing on the React + Spring Boot
+                ecosystem to develop full-stack web applications with smooth
+                front-to-backend integration.
               </p>
             </div>
           </div>
