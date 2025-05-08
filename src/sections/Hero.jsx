@@ -31,14 +31,14 @@ const Hero = () => {
               <HeroCamera isMobile={isMobile}>
                 <group>
                   <BumbleBee
-                    position={isMobile ? [-4, -11.6, -12] : [-3, -11.9, -12]}
+                    position={isMobile ? [0, -13.6, -18] : [-3, -11.9, -12]}
                     rotation={[0.2, 0.1, 0]}
-                    scale={isMobile ? 0.09 : 0.094}
+                    scale={isMobile ? 0.089 : 0.094}
                   />
                   <Dog
                     scale={5}
-                    position={isMobile ? [4, -10.6, -2] : [5, -10.8, -2]}
-                    rotation={[-0.2, -0.5, 0]}
+                    position={isMobile ? [4, -10.6, -3] : [5, -10.8, -2]}
+                    rotation={[-0.1, -0.5, 0]}
                   />
                 </group>
               </HeroCamera>
