@@ -5,7 +5,7 @@ import {navLinks} from "../constants/index.js";
 
 const NavItems = () =>{
   return(
-    <ul className="nav-ul">
+    <ul className="nav-ul ">
      {navLinks.map(({id,name,href}) => (
       <li key={id} className="nav-li">
         <a href={ href } className="nav-li_a" onClick={() =>{}}>{name}</a>
@@ -31,7 +31,7 @@ const Navbar = () => {
             Pravesh
           </a>
           <button
-            className="w-6 h-6 text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
+            className="w-8 h-8 text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
             aria-label="toggle menu"
             onClick={toggleMenu}
           >

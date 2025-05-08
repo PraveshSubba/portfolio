@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space ">
-        <a href="#contact" className="w-fit ">
+        <a href="#about" className="w-fit ">
           <Button
             name="lets work together"
             isBeam

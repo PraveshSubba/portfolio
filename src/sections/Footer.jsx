@@ -30,7 +30,11 @@ const Footer = () => {
         </div>
 
         <div className="flex gap-3">
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/__d.a.r.k_s.o.u.l?igsh=MXR6dzB0amxid2Y1Mw=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="social-icon">
               <img
                 src="/assets/instagram.svg"

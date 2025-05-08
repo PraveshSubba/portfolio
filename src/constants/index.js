@@ -1,8 +1,3 @@
-import { ClassNames } from "@emotion/react";
-import { SpotLight } from "@react-three/drei";
-import Background from "three/src/renderers/common/Background.js";
-import { texture } from "three/tsl";
-
 export const navLinks = [
   {
     id: 1,
@@ -21,6 +16,11 @@ export const navLinks = [
   },
   {
     id: 4,
+    name: "Blog",
+    href: "#blog",
+  },
+  {
+    id: 5,
     name: "Contact",
     href: "#contact",
   },
