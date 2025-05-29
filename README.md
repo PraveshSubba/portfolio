@@ -11,7 +11,7 @@ This is my personal portfolio website built with React, Vite, and Three.js.
 
 ## 🌐 Live Demo
 
-Coming soon...
+![Demo GIF](public/assets/demo.gif)
 
 ## 📦 Tech Stack
 
