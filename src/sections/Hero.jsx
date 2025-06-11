@@ -7,18 +7,24 @@ import { useMediaQuery } from "react-responsive";
 import { HeroCamera } from "../components/HeroCamera";
 import Button from "../components/Button";
 import Dog from "../components/Dog";
-
+import Typewriter from "typewriter-effect";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
       <div className="w-full mx-auto flex flex-col sm:mt-20 mt-16 c-space gap-3">
-        <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
-          Hello, I am Pravesh <span className="waving-hand">😊</span>
+        <p className="sm:text-3xl text-3xl font-medium text-white text-center font-Outfit">
+          <Typewriter
+            options={{
+              strings: ["Hello", "I am Pravesh"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </p>
-        <p className="hero_tag text-gray_gradient">
-          Learning. Growing. Creating
+        <p className="hero_tag text-gray_gradient text-sm">
+          {"< Learning. Growing. Creating />"}
         </p>
         <div className="w-full h-full absolute inset-0">
           <Canvas className="w-full h-full ">
